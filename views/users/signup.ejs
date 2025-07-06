@@ -1,42 +1,42 @@
-<% layout("/layouts/boilerplate") %>
-<style>
-    .size{
-        width: 100px !important;
-    }
-</style>
+    <% layout("/layouts/boilerplate") %>
+    <style>
+        .size{
+            width: 100px !important;
+        }
+    </style>
 
-<div class="row mt-5">
-    <h1 class="col-6 offset-3 mb-5">Sign up :)</h1>
-    <div class="col-6 offset-3">
-        <form action="/signup" method="POST" class="needs-validation" novalidate>
-            <div class="mb-3">
-                <lable for="username" class="form-lable">Username</lable>
-                <input type="text" name="username"  placeholder="add username" class="form-control" id="username"
-                    required />
+    <div class="row mt-5">
+        <h1 class="col-6 offset-3 mb-5">Sign up :)</h1>
+        <div class="col-6 offset-3">
+            <form action="/signup" method="POST" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <lable for="username" class="form-lable">Username</lable>
+                    <input type="text" name="username"  placeholder="add username" class="form-control" id="username"
+                        required />
 
-                    <div class="valid-feedback">  looks good!</div> <br />
+                        <div class="valid-feedback">  looks good!</div> <br />
 
-            </div>
+                </div>
 
-            <div class="mb-3">
-                <lable for="email" class="form-lable">Email</lable>
-                <input type="emai" name="email"  placeholder="add email" class="form-control" id="email" required
-                    required />
+                <div class="mb-3">
+                    <lable for="email" class="form-lable">Email</lable>
+                    <input type="emai" name="email"  placeholder="add email" class="form-control" id="email" required
+                        required />
 
-                    <div class="valid-feedback">  looks good!</div> <br />
+                        <div class="valid-feedback">  looks good!</div> <br />
 
-            </div>
+                </div>
 
-            <div class="mb-3">
-                <lable for="password" class="form-lable">Password</lable>
-                <input type="password" name="password"  placeholder="add password" class="form-control" id="password" required
-                    required />
+                <div class="mb-3">
+                    <lable for="password" class="form-lable">Password</lable>
+                    <input type="password" name="password"  placeholder="add password" class="form-control" id="password" required
+                        required />
 
-                    <div class="valid-feedback">  looks good!</div> <br />
+                        <div class="valid-feedback">  looks good!</div> <br />
 
-            </div>
+                </div>
 
-            <button class="btn btn-success size">Sign up</button>
-        </form>
+                <button class="btn btn-success size">Sign up</button>
+            </form>
+        </div>
     </div>
-</div>
