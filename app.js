@@ -162,7 +162,6 @@
 // }
 
 // startServer();
-
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
@@ -187,6 +186,9 @@ const reviewsRouter = require('./routes/review.js');
 const userRouter = require('./routes/user.js');
 
 const app = express();
+
+// --------- KEY ADDITION: trust proxy ---------
+app.set('trust proxy', 1); // TRUST PROXY REQUIRED FOR RENDER/PROD
 
 // View engine setup
 app.set('view engine', 'ejs');
